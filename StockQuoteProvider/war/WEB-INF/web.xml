@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>StockSummaryServlet</servlet-name>
+		<servlet-class>com.mohanaravind.stockquoteprovider.StockSummaryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StockSummaryServlet</servlet-name>
+		<url-pattern>/stocksummaryservlet</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>apiKey</param-name>
+		<param-value>23a2A!0aSdsaAFUpqmvA49()564@3Sv18sA413g</param-value>
+	</context-param>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
